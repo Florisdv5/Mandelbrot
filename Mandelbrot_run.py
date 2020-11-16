@@ -52,8 +52,8 @@ for pix_x in range(0, X_WIDTH):
             value = 0
         # Plot the point
         draw.point([pix_x, pix_y], (hue, saturation, value))
-    if percentage != str(round(pix_x / X_WIDTH, 4)*100):
-        percentage = str(round(pix_x / X_WIDTH, 4)*100)
+    if percentage != str(round(pix_x / X_WIDTH, 3)*100):
+        percentage = str(round(pix_x / X_WIDTH, 3)*100)
         print("Percentage: " + percentage + "%")
 
 im.convert('RGB').save('outputlarge.png', 'PNG')
